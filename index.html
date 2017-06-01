@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Carousel con JS</title>
-	<link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>Carousel con JS</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
+
 <body>
-	<div class="carousel">
-		<div data-slide="0" class="carousel-content active">
-			<img src="" alt="Imagen 1">
-		</div>
-		<div data-slide="1" class="carousel-content ">
-			<img src="" alt="Imagen 2">
-		</div>
-		<div data-slide="2" class="carousel-content ">
-			<img src="" alt="Imagen 3">
-		</div>
-		<div data-slide="3" class="carousel-content">
-			<img src="" alt="Imagen 4">
-		</div>
-	</div>
-	<div class="controls">
-		<a href="#" class="previous">&#60;</a>
-		<button type="button" data-target="0" class="control"></button>
-		<button type="button" data-target="1" class="control"></button>
-		<button type="button" data-target="2" class="control"></button>
-		<button type="button" data-target="3" class="control"></button>
-		<a href="#" class="next">&#62;</a>
-	</div>
-	<script src="./js/app.js"></script>
+    <header>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <h1>Carrusel con jQuery</h1>
+        </nav>
+    </header>
+    <div class="carousel row text-center">
+        <div data-slide="0" class="carousel-content active">
+            <img src="images/ghost1.jpg" alt="Imagen 1">
+        </div>
+        <div data-slide="1" class="carousel-content ">
+            <img src="images/ghost2.jpg" alt="Imagen 2">
+        </div>
+        <div data-slide="2" class="carousel-content ">
+            <img src="images/ghost3.jpg" alt="Imagen 3">
+        </div>
+        <div data-slide="3" class="carousel-content">
+            <img src="images/pacman.png" alt="Imagen 4">
+        </div>
+    </div>
+    <div class="controls row text-center">
+        <a href="#" class="previous">&#60;</a>
+        <button type="button" data-target="0" class="control btn btn-primary btn-circle"><i class="glyphicon glyphicon-heart"></i></button>
+        <button type="button" data-target="1" class="control btn btn-success btn-circle"><i class="glyphicon glyphicon-heart"></i></button>
+        <button type="button" data-target="2" class="control btn btn-warning btn-circle"><i class="glyphicon glyphicon-heart"></i></button>
+        <button type="button" data-target="3" class="control btn btn-danger btn-circle"><i class="glyphicon glyphicon-heart"></i></button>
+        <a href="#" class="next">&#62;</a>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
 </body>
+
 </html>
